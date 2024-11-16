@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minesweeper</title>
+    <title>Michael's Minesweeper</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Minesweeper</h1>
+    <div>
+        <label for="difficulty">Choose Difficulty:</label>
+        <select id = "difficulty">
+            <option value="beginner">Beginner (9x9, 10 mines)</option>
+            <option value="intermediate">Intermediate (16x16, 40 mines)</option>
+            <option value="hard">Hard (16x30, 99 mines)</option>
+        </select>
+        <button id="start-game">Start Game</button>
+    </div>
     <div id="game-board"></div>
     <script src="script.js"></script>
 </body>

@@ -9,4 +9,43 @@ body {
 h1 {
     color: #333;
 }
+label, select, button {
+    margin: 10px;
+    font-size: 16px;
+}
 
+button {
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+#game-board {
+    margin-top: 20px;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    gap: 2px;
+    margin: 20px auto;
+    width: max-content;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    border: 1px solid #999;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.cell.revealed {
+    background-color: #eee;
+    cursor: default;
+}
