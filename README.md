@@ -1,1 +1,1 @@
-Browser Minesweeper in JS 
+Browser Minesweeper with difficulty selection in JS 
